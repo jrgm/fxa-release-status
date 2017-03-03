@@ -39,9 +39,7 @@ function main() {
     .parse(process.argv)
 
   const hosts = require('./config/index.json')[commander.env]
-  const requests = hosts.map(get)
-
-  P.all(requests)
+  P.all(hosts.map(get))
     .then((res) => console.log(JSON.stringify(res.map(valueOrReason), null, 2)))
     .catch(console.error)
 }
