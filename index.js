@@ -26,7 +26,7 @@ function get(host) {
 
       return resolve(body)
     })
-  })
+  }).reflect()
 }
 
 function valueOrReason(p) {
@@ -39,7 +39,7 @@ function main() {
     .parse(process.argv)
 
   const hosts = require('./config/index.json')[commander.env]
-  const requests = hosts.map(get).map((p) => p.reflect())
+  const requests = hosts.map(get)
 
   P.all(requests)
     .then((res) => console.log(JSON.stringify(res.map(valueOrReason), null, 2)))
