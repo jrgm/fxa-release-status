@@ -1,0 +1,27 @@
+{
+  "prod": [
+    "accounts.firefox.com",
+    "api.accounts.firefox.com",
+    "oauth.accounts.firefox.com",
+    "profile.accounts.firefox.com"
+  ],
+  "stage": [
+    "accounts.stage.mozaws.net",
+    "api-accounts.stage.mozaws.net",
+    "oauth.stage.mozaws.net",
+    "profile.stage.mozaws.net"
+  ],
+  "latest": [
+    "latest.dev.lcip.org",
+    "latest.dev.lcip.org/auth",
+    "oauth-latest.dev.lcip.org",
+    "latest.dev.lcip.org/profile"
+  ],
+  "stable": [
+    "stable.dev.lcip.org",
+    "stable.dev.lcip.org/auth",
+    "oauth-stable.dev.lcip.org",
+    "stable.dev.lcip.org/profile"
+  ]
+}
+

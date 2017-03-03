@@ -1,0 +1,19 @@
+{
+  "name": "fxa-release-status",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint *.js"
+  },
+  "author": "John Morrison <jrgmorrison@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "3.4.7",
+    "commander": "2.9.0",
+    "request": "2.79.0"
+  },
+  "devDependencies": {
+    "eslint": "3.16.1"
+  }
+}
