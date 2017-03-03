@@ -29,16 +29,21 @@ function get(host) {
   })
 }
 
+function valueOrReason(p) {
+  return p.isFulfilled() ? p.value() : p.reason()
+}
+
 function main() {
   commander
     .option('-e, --env [env]', 'prod|stage|latest|stable', 'prod')
     .parse(process.argv)
 
   const hosts = require('./config/index.json')[commander.env]
-  const requests = hosts.map(get)
+  const requests = hosts.map(get).map((p) => p.reflect())
+
   P.all(requests)
-    .then((res) => console.log(JSON.stringify(res, null, 2)))
-    .catch((err) => console.error(err))
+    .then((res) => console.log(JSON.stringify(res.map(valueOrReason), null, 2)))
+    .catch(console.error)
 }
 
 main()
