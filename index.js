@@ -5,9 +5,9 @@ const commander = require('commander')
 const P = require('bluebird')
 const request = require('request')
 
-function get(host) {
+function get(env, host) {
   const options = {
-    url: 'https://' + host + '/__version__',
+    url: 'https://' + host + '/__version__?env=' + env,
     method: 'GET',
     json: true,
     strictSSL: true,
@@ -38,8 +38,15 @@ function main() {
     .option('-e, --env [env]', 'prod|stage|latest|stable', 'prod')
     .parse(process.argv)
 
-  const hosts = require('./config/index.json')[commander.env]
-  P.all(hosts.map(get))
+  let hosts = require('./config/index.json')[commander.env]
+  if (! hosts) {
+    // assume it's some other *.dev.lcip.org box.
+    let latest = require('./config/index.json')['latest']
+    hosts = latest.map((host) => host.replace('latest', commander.env))
+  }
+
+  let env = commander.env
+  P.all(hosts.map(get.bind(null, env)))
     .then((res) => console.log(JSON.stringify(res.map(valueOrReason), null, 2)))
     .catch(console.error)
 }
