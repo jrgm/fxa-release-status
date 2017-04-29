@@ -4,6 +4,7 @@
 const commander = require('commander')
 const P = require('bluebird')
 const request = require('request')
+const pkg = require('./package.json')
 
 function get(env, host) {
   const options = {
@@ -11,7 +12,10 @@ function get(env, host) {
     method: 'GET',
     json: true,
     strictSSL: true,
-    followRedirects: false
+    followRedirects: false,
+    headers: {
+      'user-agent': [ pkg.name, pkg.version ].join('/')
+    }
   }
 
   return new P((resolve, reject) => {
