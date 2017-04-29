@@ -24,6 +24,8 @@ function get(env, host) {
         return reject(new Error('Non-200 response ' + res.statusCode))
       }
 
+      body.url = options.url
+
       return resolve(body)
     })
   }).reflect()

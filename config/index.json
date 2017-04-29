@@ -22,6 +22,11 @@
     "stable.dev.lcip.org/auth",
     "oauth-stable.dev.lcip.org",
     "stable.dev.lcip.org/profile"
+  ],
+  "nightly": [
+    "nightly.dev.lcip.org",
+    "nightly-auth.dev.lcip.org",
+    "nightly-oauth.dev.lcip.org",
+    "nightly-profile.dev.lcip.org" 
   ]
 }
-
