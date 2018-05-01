@@ -11,6 +11,12 @@
     "oauth.stage.mozaws.net",
     "profile.stage.mozaws.net"
   ],
+  "gcppoc": [
+    "accounts.public.gcppoc.mozaws.net",
+    "auth.public.gcppoc.mozaws.net",
+    "oauth.public.gcppoc.mozaws.net",
+    "profile.public.gcppoc.mozaws.net"
+  ],
   "latest": [
     "latest.dev.lcip.org",
     "latest.dev.lcip.org/auth",
