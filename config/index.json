@@ -3,13 +3,17 @@
     "accounts.firefox.com",
     "api.accounts.firefox.com",
     "oauth.accounts.firefox.com",
-    "profile.accounts.firefox.com"
+    "profile.accounts.firefox.com",
+    "subscriptions.firefox.com",
+    "eventbroker-prod.fxa.prod.cloudops.mozgcp.net"
   ],
   "stage": [
     "accounts.stage.mozaws.net",
     "api-accounts.stage.mozaws.net",
     "oauth.stage.mozaws.net",
-    "profile.stage.mozaws.net"
+    "profile.stage.mozaws.net",
+    "payments-stage.fxa.nonprod.cloudops.mozgcp.net",
+    "eventbroker-stage.fxa.nonprod.cloudops.mozgcp.net"
   ],
   "gcppoc": [
     "accounts.public.gcppoc.mozaws.net",
