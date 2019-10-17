@@ -15,12 +15,6 @@
     "payments-stage.fxa.nonprod.cloudops.mozgcp.net",
     "eventbroker-stage.fxa.nonprod.cloudops.mozgcp.net"
   ],
-  "gcppoc": [
-    "accounts.public.gcppoc.mozaws.net",
-    "auth.public.gcppoc.mozaws.net",
-    "oauth.public.gcppoc.mozaws.net",
-    "profile.public.gcppoc.mozaws.net"
-  ],
   "latest": [
     "latest.dev.lcip.org",
     "latest.dev.lcip.org/auth",
@@ -32,11 +26,5 @@
     "stable.dev.lcip.org/auth",
     "oauth-stable.dev.lcip.org",
     "stable.dev.lcip.org/profile"
-  ],
-  "nightly": [
-    "nightly.dev.lcip.org",
-    "nightly-auth.dev.lcip.org",
-    "nightly-oauth.dev.lcip.org",
-    "nightly-profile.dev.lcip.org" 
   ]
 }
