@@ -11,7 +11,7 @@
   "dependencies": {
     "bluebird": "3.4.7",
     "commander": "2.9.0",
-    "request": "2.79.0"
+    "request": "2.88.0"
   },
   "devDependencies": {
     "eslint": "3.16.1"
