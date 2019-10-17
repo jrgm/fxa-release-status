@@ -9,11 +9,11 @@
   "author": "John Morrison <jrgmorrison@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "3.4.7",
-    "commander": "2.9.0",
+    "bluebird": "3.7.1",
+    "commander": "3.0.2",
     "request": "2.88.0"
   },
   "devDependencies": {
-    "eslint": "3.16.1"
+    "eslint": "6.5.1"
   }
 }
