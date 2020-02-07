@@ -15,6 +15,14 @@
     "payments-stage.fxa.nonprod.cloudops.mozgcp.net",
     "eventbroker-stage.fxa.nonprod.cloudops.mozgcp.net"
   ],
+  "nightly": [
+    "nightly.dev.lcip.org",
+    "nightly-auth.dev.lcip.org",
+    "nightly-oauth.dev.lcip.org",
+    "nightly-profile.dev.lcip.org",
+    "payments-dev.fxa.nonprod.cloudops.mozgcp.net",
+    "eventbroker-dev.fxa.nonprod.cloudops.mozgcp.net"
+  ],
   "latest": [
     "latest.dev.lcip.org",
     "latest.dev.lcip.org/auth",
